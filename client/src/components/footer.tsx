@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-8">
           <div>
             <img 
-              src="/images/entetekrissavocat.png" 
+              src="./images/entetekrissavocat.png" 
               referrerPolicy="no-referrer"
               alt="Cabinet Krieger" 
               className="h-10 w-auto mb-4 brightness-0 invert"

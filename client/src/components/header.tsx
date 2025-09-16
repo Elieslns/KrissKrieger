@@ -37,7 +37,7 @@ export default function Header({ activeSection }: HeaderProps) {
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center space-x-4">
             <img 
-              src="/images/entetekrissavocat.png" 
+              src="./images/entetekrissavocat.png" 
               referrerPolicy="no-referrer"
               alt="Cabinet Krieger" 
               className="h-20 sm:h-24 lg:h-28 w-auto"

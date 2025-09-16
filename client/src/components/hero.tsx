@@ -46,7 +46,7 @@ export default function Hero() {
           <div className="relative">
             <div className="relative bg-card rounded-2xl shadow-xl p-8">
               <img 
-                src="/images/kriss.jpg" 
+                src="./images/kriss.jpg" 
                 referrerPolicy="no-referrer"
                 alt="Maître Kriss KRIEGER" 
                 className="w-48 h-48 rounded-xl mx-auto object-cover shadow-lg"
