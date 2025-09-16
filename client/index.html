@@ -33,6 +33,11 @@
           );
         }
       }(window.location))
+      
+      // Force reload if we're on GitHub Pages and the path doesn't match
+      if (window.location.hostname.includes('github.io') && !window.location.pathname.startsWith('/KrissKrieger/')) {
+        window.location.href = '/KrissKrieger/';
+      }
     </script>
     <!-- End Single Page Apps for GitHub Pages -->
   </body>
