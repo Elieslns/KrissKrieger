@@ -20,7 +20,8 @@ export default function Header({ activeSection }: HeaderProps) {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      const headerHeight = 80;
+      const headerEl = document.querySelector('header');
+      const headerHeight = (headerEl instanceof HTMLElement ? headerEl.offsetHeight : 80) + 8; // small extra spacing
       const targetPosition = element.offsetTop - headerHeight;
       window.scrollTo({
         top: targetPosition,
@@ -36,19 +37,16 @@ export default function Header({ activeSection }: HeaderProps) {
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center space-x-4">
             <img 
-              src="http://krieger-avocat.com/images/entetekrissavocat.png" 
+              src="/images/entetekrissavocat.png" 
+              referrerPolicy="no-referrer"
               alt="Cabinet Krieger" 
-              className="h-12 w-auto"
+              className="h-20 sm:h-24 lg:h-28 w-auto"
+              height={96}
+              decoding="async"
+              fetchPriority="high"
               data-testid="logo"
             />
-            <div className="hidden sm:block">
-              <h1 className="font-serif font-semibold text-xl text-foreground">
-                Cabinet Maître Kriss KRIEGER
-              </h1>
-              <p className="text-sm text-muted-foreground">
-                Avocat au Barreau d'Aix-en-Provence
-              </p>
-            </div>
+
           </div>
           
           {/* Desktop Navigation */}

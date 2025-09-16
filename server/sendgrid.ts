@@ -1,4 +1,7 @@
 import { MailService } from '@sendgrid/mail';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 let mailService: MailService | null = null;
 
@@ -51,7 +54,7 @@ export async function sendEmail(params: EmailParams): Promise<boolean> {
   try {
     const response = await service.send({
       to: params.to,
-      from: params.from,
+      from: params.from || process.env.CONTACT_FROM || 'noreply@krieger-avocat.com',
       replyTo: params.replyTo,
       subject: params.subject,
       text: params.text,

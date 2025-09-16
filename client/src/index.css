@@ -4,50 +4,51 @@
 @tailwind utilities;
 
 :root {
-  --background: hsl(0 0% 100%);
-  --foreground: hsl(222 47% 25%);
-  --card: hsl(0 0% 100%);
-  --card-foreground: hsl(222 47% 25%);
-  --popover: hsl(0 0% 100%);
-  --popover-foreground: hsl(222 47% 25%);
-  --primary: hsl(217 91% 35%);
-  --primary-foreground: hsl(0 0% 98%);
-  --secondary: hsl(215 16% 47%);
-  --secondary-foreground: hsl(0 0% 98%);
-  --muted: hsl(216 12% 96%);
-  --muted-foreground: hsl(215 16% 47%);
-  --accent: hsl(43 96% 56%);
-  --accent-foreground: hsl(222 47% 25%);
-  --destructive: hsl(0 84% 60%);
-  --destructive-foreground: hsl(0 0% 98%);
-  --border: hsl(216 13% 85%);
-  --input: hsl(216 13% 85%);
-  --ring: hsl(217 91% 35%);
+  /* Palette inspirée du logo: bordeaux et anthracite */
+  --background: #ffffff;
+  --foreground: #2C312D;
+  --card: #ffffff;
+  --card-foreground: #2C312D;
+  --popover: #ffffff;
+  --popover-foreground: #2C312D;
+  --primary: #94001A;
+  --primary-foreground: #ffffff;
+  --secondary: #2C312D;
+  --secondary-foreground: #ffffff;
+  --muted: #f3f4f6;
+  --muted-foreground: #5b615b;
+  --accent: #B30022; /* variante plus vive du bordeaux */
+  --accent-foreground: #ffffff;
+  --destructive: #e11d48;
+  --destructive-foreground: #ffffff;
+  --border: #e5e7eb;
+  --input: #e5e7eb;
+  --ring: #94001A;
   --radius: 0.5rem;
   --font-sans: 'Inter', system-ui, sans-serif;
   --font-serif: 'Playfair Display', Georgia, serif;
 }
 
 .dark {
-  --background: hsl(222 47% 25%);
-  --foreground: hsl(0 0% 98%);
-  --card: hsl(215 16% 47%);
-  --card-foreground: hsl(0 0% 98%);
-  --popover: hsl(222 47% 25%);
-  --popover-foreground: hsl(0 0% 98%);
-  --primary: hsl(217 91% 35%);
-  --primary-foreground: hsl(0 0% 98%);
-  --secondary: hsl(215 16% 47%);
-  --secondary-foreground: hsl(0 0% 98%);
-  --muted: hsl(215 16% 47%);
-  --muted-foreground: hsl(216 12% 96%);
-  --accent: hsl(43 96% 56%);
-  --accent-foreground: hsl(222 47% 25%);
-  --destructive: hsl(0 84% 60%);
-  --destructive-foreground: hsl(0 0% 98%);
-  --border: hsl(215 16% 47%);
-  --input: hsl(215 16% 47%);
-  --ring: hsl(217 91% 35%);
+  --background: #1f2320;
+  --foreground: #ffffff;
+  --card: #2C312D;
+  --card-foreground: #ffffff;
+  --popover: #1f2320;
+  --popover-foreground: #ffffff;
+  --primary: #94001A;
+  --primary-foreground: #ffffff;
+  --secondary: #2C312D;
+  --secondary-foreground: #ffffff;
+  --muted: #2C312D;
+  --muted-foreground: #f3f4f6;
+  --accent: #B30022;
+  --accent-foreground: #ffffff;
+  --destructive: #e11d48;
+  --destructive-foreground: #ffffff;
+  --border: #2C312D;
+  --input: #2C312D;
+  --ring: #94001A;
 }
 
 @layer base {

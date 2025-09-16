@@ -4,6 +4,9 @@ import { storage } from "./storage";
 import { insertContactMessageSchema } from "@shared/schema";
 import { sendEmail, isEmailEnabled } from "./sendgrid";
 import { z } from "zod";
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 // Rate limiting map (simple in-memory)
 const rateLimitMap = new Map<string, { count: number; resetTime: number }>();
@@ -66,7 +69,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       // Send email notification using SendGrid if enabled
       let emailSent = false;
       if (isEmailEnabled()) {
-        const contactTo = process.env.CONTACT_TO || "contact@krieger-avocat.com";
+        const contactTo = process.env.CONTACT_TO || "elieslounis@gmail.com";
         const contactFrom = process.env.CONTACT_FROM || "noreply@krieger-avocat.com";
         
         const textContent = `

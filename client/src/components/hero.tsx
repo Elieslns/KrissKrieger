@@ -14,7 +14,7 @@ export default function Hero() {
   };
 
   return (
-    <section id="accueil" className="pt-24 pb-16 bg-gradient-to-br from-primary/5 to-accent/5">
+    <section id="accueil" className="pt-32 lg:pt-40 pb-16 bg-gradient-to-br from-primary/5 to-accent/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
@@ -46,9 +46,14 @@ export default function Hero() {
           <div className="relative">
             <div className="relative bg-card rounded-2xl shadow-xl p-8">
               <img 
-                src="http://krieger-avocat.com/images/kriss.jpg" 
+                src="/images/kriss.jpg" 
+                referrerPolicy="no-referrer"
                 alt="Maître Kriss KRIEGER" 
                 className="w-48 h-48 rounded-xl mx-auto object-cover shadow-lg"
+                width={192}
+                height={192}
+                loading="lazy"
+                decoding="async"
                 data-testid="img-kriss"
               />
               <div className="mt-6 text-center">
